@@ -37,7 +37,7 @@ function showPresence($phone, $from, $type){
     // Only for targets: We save the status change (with out the name at the moment since I only have 1 target)
     // and we save it to a message variable. 
     if (array_key_exists($number, $targets)) {
-        if($type=="available"){
+        if($type=="Available"){
             $lastSeenDuration = time();
             $message = "$type at " . date("Y-m-d H:i:s", time());
             //$message = "$name $type at " . date("Y-m-d H:i:s", time());
